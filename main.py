@@ -1,4 +1,11 @@
-data = [1,5,10,55,3,9]
+data = []
+elm = int(input("kiek elementų sekoje?"))
+
+for i in range(0,elm):
+    a = int(input())
+    data.append(a)
+
+print("Jūsų seka:", data)
 
 def swap (data, i):
     temp = data[i]
@@ -11,4 +18,4 @@ for i in range(len(data) - 1):
             swap(data, j)
 
 
-print(data)
+print("Surušiuota seka:", data)
